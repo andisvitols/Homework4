@@ -1,0 +1,218 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	min-width: 300px;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+h1, h2, h6, nav, .mybtns, #time{
+	text-align: center;
+}
+
+header {
+	min-height: 10vh;
+	padding-top: 20px;
+}
+
+nav>ul{
+	margin: 0 auto;
+	background-color: #7a7;
+}
+
+nav>ul>li {
+	display: inline-block;
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
+	transition: .2s;
+}
+
+nav>ul>li:hover{
+	color: #eee;
+	cursor: pointer;
+	background-color: #8b8;
+}
+
+main{
+	margin-top: 20px;
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 60vh;
+}
+
+main::after{
+	clear: both;
+}
+
+main h2{
+	margin: 20px auto;
+}
+
+main>aside, main>article{
+	text-align: justify;
+	padding: 0 5px;
+}
+
+main>article{
+	position: absolute;
+	top: 0;
+	width: 50%;
+	margin: 0 25%;
+}
+
+main>aside{
+	width: 25%;
+}
+
+main.aside::after{
+	clear: both;
+}
+main>aside.left{
+	float: left;
+}
+main>aside.right{
+	float: right;
+}
+
+#time{
+	font-size: 30px;
+	color: #7a7;
+}
+
+.butts{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mybtns{
+	display: inline-block;
+	border-radius: 4px;
+	margin: 10px auto;
+	height: 30px;
+	line-height: 30px;
+	background-color: #7a7;
+	color: #eee;
+	font-style: 24px;
+	width: 80%;
+	transition: .3s;
+	box-shadow: 2px 2px 4px rgba(63, 63, 63, .7);
+}
+
+.mybtns:hover{
+	background-color: #585;
+}
+
+.mybtns:active{
+	box-shadow: none;
+}
+
+.butts>button {
+	text-align: center;
+}
+
+.windows {
+	position: fixed;
+	width: 60vw;
+	height: 80vh;
+	border: 1px solid grey;
+	border-radius: 6px;
+	left: 20vw;
+	top: -100vh;
+	color: white;
+	background-color: rgba(63,63,63,.97);
+	box-shadow: 2px 2px 10px #333;
+	transition: .5s;
+	z-index: 1;
+}
+
+.winwis {
+	top: 10vh;
+	z-index: 2;
+}
+
+.btn-w-close{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	main>aside, main>article {
+		position: static;
+		width: 100%;
+	}
+
+	main>article {
+		margin: 0;
+	}
+}
+
+.alpes {
+	width: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 5px;
+}
+
+#city{
+	font-size: 32px;
+	text-align: center;
+}
+
+#temp{
+	font-size: 44px;
+	text-align: center;
+}
+
+#otherweather{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.borient {
+	text-align: center;
+}
+.button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} 
+.button2 {background-color: #008CBA;} 
+.img-container {
+    text-align: center;
+}
+.equipment { 
+	width: 70%;
+}
+ol {margin: 0 0 0 50px;}
+
+.map{
+	padding-top: 10px;
+	position:relative;
+	text-align:right;
+	height:95%;
+	width:100%;
+}
+	
+.gmap_canvas {overflow:hidden;
+	background:none !important;
+	height:95%;
+	width:100%;
+}

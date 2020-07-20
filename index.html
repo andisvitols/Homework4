@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Website for snowboard academy</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Snowboard academy</h1>
+		</header>
+		<nav>
+			<ul>
+				<li>Link 1</li>
+				<li>Link 2</li>
+				<li>Link 3</li>
+				<li>Link 4</li>
+			</ul>
+		</nav>
+		<main>
+			<aside class="left">
+				<h2>History of snowboard</h2>
+				Modern snowboarding began in 1965 when Sherman Poppen, an engineer in Muskegon, Michigan, invented a toy for his daughters by fastening two skis together and attaching a rope to one end so he would have some control as they stood on the board and glided downhill. Dubbed the "snurfer" (combining snow and surfer) by his wife Nancy, the toy proved so popular among his daughters' friends that Poppen licensed the idea to a manufacturer.
+			</aside>
+			<article>
+				<h2>Snowboarding camp</h2>
+				Our Adult camps are a great way to meet like minded people who love to snowboard. The camps are all-mountain riding with a focus on each discipline throughout the week and depending on the weather and snow conditions. Our main goal to further your ability while having the most fun, develop your style and establish confidence and we will all decide on an action plan to get you to achieve these key fundamentals.				
+				<div><img class="alpes" src="assets/IMG/lesdeuxalpes.jpg" alt="Les Deux Alpes"></div>
+			</article>
+			<aside class="right">
+				<h2>Time</h2>
+				<div id="time">00:00:00</div>
+				<hr><br>
+				<div class="container">
+					<div class="row">
+					<div id="city" class="w-100 text-center city mt-4"></div>
+					</div>
+					<div class="row">
+						<div id="temp" class="w-100 text-center temp mt-4"></div>
+					</div>
+					<div class="row">
+					<div id="otherweather" class="w-100 text-center otherweather"></div>
+					</div>
+				</div>
+				<hr><br>
+				<div class="butts">
+					<button class="mybtns" data-age="70">Button 1</button>
+					<button class="mybtns" data-age="75">Button 2</button>
+					<button class="mybtns" data-age="80">Button 3</button>
+					<button class="mybtns" data-age="85">Button 4</button>
+					<button class="mybtns" onclick="showWindow(-1)">close</button>
+				</div>
+			</aside>
+			<div style="clear: both;"></div>
+		</main>
+		<footer class="footer">
+			<h6>© 2020 Snowboard Academy SIA</h6>
+		</footer>
+	</div>
+
+	<div class="windows" id="witem1">
+		<h2 class="w-100 text-center mt-2">Book here</h2>
+		We are renowned for providing the best snowboard camps in Europe and book up fast so don’t hesitate to enquire now for any further details.
+		<div class="borient">
+			<button type="button" onclick="alert('Reservation is no longer available!')" class="button button1"> Winter camp from 15/02/2021 EUR 800</button>
+			<button type="button" onclick="alert('Reservation is no longer available!')" class="button button2"> Winter camp from 15/04/2021 EUR 600</button>
+		</div>
+		<button class="btn btn-info btn-w-close" onclick="showWindow(-1)">Close</button>
+	</div>
+	<div class="windows" id="witem2">
+		<h2 class="w-100 text-center mt-2">Necessary equipment</h2>
+		When packing for the camp don't forget to take:
+		<ol>
+			<li>Snowboard</li>
+			<li>Boots</li>
+			<li>Helmet</li>
+			<li>Jacket</li>
+			<li>Pants</li>
+			<li>Gloves</li>
+			<li>Goggles</li>
+			</ol>
+		<div class="img-container">
+		<img class="equipment" src="assets/IMG/snowboarding equipment.png" alt="snowboarding equipment">
+		</div>
+		<button class="btn btn-info btn-w-close" onclick="showWindow(-1)">Close</button>
+	</div>
+	<div class="windows" id="witem3">
+		<h2 class="w-100 text-center mt-2">Location</h2>
+		Our academy is located in France, Les Deux Alpes!
+		<div class="map">
+		<div class="gmap_canvas">
+			<iframe width="100%" height="95%" id="gmap_canvas" src="https://maps.google.com/maps?q=les%20deux%20alpes&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		</div>
+		<button class="btn btn-info btn-w-close" onclick="showWindow(-1)">Close</button>
+	</div>
+	<div class="windows" id="witem4">
+		<h2 class="w-100 text-center mt-2">Contacts</h2>
+		For more information please to contact us at: <a href="mailto:vitols.andis@gmail.com">vitols.andis@gmail.com</a>
+		<button class="btn btn-info btn-w-close" onclick="showWindow(-1)">Close</button>
+	</div>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
